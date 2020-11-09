@@ -65,8 +65,8 @@
 								<a class="main-img-user" href=""><img alt="avatar" src="{{URL::asset('assets/img/users/1.jpg')}}"></a>
 								<div class="dropdown-menu">
 									<div class="header-navheading">
-										<h6 class="main-notification-title">Sonia Taylor</h6>
-										<p class="main-notification-text">Web Designer</p>
+										<h6 class="main-notification-title"> {{ Auth::user()->first_name }} {{ Auth::user()->last_name }} </h6>
+										<p class="main-notification-text">{{ Auth::user()->email }}</p>
 									</div>
 									<a class="dropdown-item border-top" href="">
 										<i class="fe fe-user"></i> My Profile
@@ -83,7 +83,7 @@
 									<a class="dropdown-item" href="">
 										<i class="fe fe-compass"></i> Activity
 									</a>
-									<a class="dropdown-item" href="signin.html">
+									<a class="dropdown-item" href="{{ url('/logout') }}">
 										<i class="fe fe-power"></i> Sign Out
 									</a>
 								</div>

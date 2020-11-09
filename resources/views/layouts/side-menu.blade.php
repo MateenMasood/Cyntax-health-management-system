@@ -321,6 +321,24 @@
 						<li class="nav-label">Distribution</li>
 						<li class="nav-label">Community Awareness Projects </li>
 						<li class="nav-label">Settings </li>
+
+						    <li class="nav-item">
+							<a class="nav-link with-sub" href=""><i class="fe fe-aperture"></i><span class="sidemenu-label">Rback</span><i class="angle fe fe-chevron-right"></i></a>
+							<ul class="nav-sub">
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="{{ url('/roles') }}">Roles</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="{{ url('/permissions') }}">Permissions</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="{{ url('employees') }}">Users</a>
+								</li>
+								
+							</ul>
+						</li>
+
+
 						<li class="mt-3">
 							<a class="btn ripple btn-success  btn-block text-white text-icon"><i class="fe fe-rotate-cw mr-1"></i>Upgrade to pro</a>
 							<a class="btn ripple btn-success  btn-block text-white iconbtn"><i class="fe fe-rotate-cw mr-1"></i></a>
